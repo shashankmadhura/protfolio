@@ -1,0 +1,66 @@
+.navBar {
+  font-size: medium;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgb(48, 45, 45);
+  padding: 10px;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: sticky;
+  z-index: 999;
+  top: 0;
+  background-color: white;
+}
+
+.navbar__right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__right > h3 {
+  padding: 5px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.active {
+  border-bottom: 3px solid blue;
+}
+
+.navbar__right > h3:hover {
+  border-bottom: 3px solid blue;
+}
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 650px) {
+  .navBar {
+    font-size: x-small;
+    /* overflow-x: scroll; */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: rgb(48, 45, 45);
+    padding: 10px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 0px;
+    margin-right: 0px;
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    background-color: white;
+  }
+  .navbar__right > h3 {
+    padding: 5px;
+    margin-left: 3px;
+    cursor: pointer;
+  }
+}

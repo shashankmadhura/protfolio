@@ -1,25 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import "./App.css";
+import NavBar from "./components/NavBar/NavBar";
+import Banner from "./components/Banner/Banner";
+import About from "./components/About/About";
+import Skills from "./components/Skills/Skills";
+import Project from "./components/Projects/Project";
+import Fade from "react-reveal/Fade";
+import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {
+  window.addEventListener("hashchange", console.log("ya"));
+  function addMargin() {
+    window.scrollTo(0, window.pageYOffset - 100);
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="app">
+        <NavBar />
+        <Fade>
+          <Banner />
+          <About />
+          <Skills />
+          <Project />
+        </Fade>
+      </div>
+    </Router>
   );
 }
 

@@ -1,0 +1,32 @@
+.skillsOption {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 600px;
+  height: 50px;
+  box-shadow: 5px 5px 5px 5px lightgray;
+  border-radius: 10px;
+  transition: transform 300ms ease-in;
+}
+.skillsOption > img {
+  height: 30px;
+  object-fit: contain;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.skillsOption:hover {
+  transform: scale(1.04);
+}
+@media (max-width: 650px) {
+  .skillsOption {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 330px;
+    height: 50px;
+    box-shadow: 5px 5px 5px 5px lightgray;
+    border-radius: 10px;
+    transition: transform 300ms ease-in;
+  }
+}

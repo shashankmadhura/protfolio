@@ -1,0 +1,89 @@
+.project__card {
+  border-radius: 30px;
+  width: 450px;
+  height: 410px;
+  box-shadow: 10px 10px 10px 10px lightgray;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 10px;
+  margin-bottom: 30px;
+  transition: transform 300ms ease-in;
+}
+.project__card > img {
+  width: 382px;
+  height: 230px;
+  object-fit: contain;
+  border-radius: 20px;
+  margin-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+.project__card > h3 {
+  margin-left: 10px;
+}
+
+.project__card > p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.projectCardIcon {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.github__icon {
+  font-size: 30px !important;
+  margin-right: 10px;
+  cursor: pointer;
+  margin-right: 30px;
+}
+.http__icon {
+  font-size: 30px !important;
+  cursor: pointer;
+}
+a {
+  color: black;
+}
+.project__card:hover {
+  transform: scale(1.05);
+}
+
+.http__icon:hover {
+  color: lightblue;
+}
+.github__icon:hover {
+  color: rgb(96, 121, 129);
+}
+
+@media (max-width: 650px) {
+  .project__card {
+    border-radius: 30px;
+    width: 320px;
+    height: 410px;
+    box-shadow: 10px 10px 10px 10px lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 60px;
+    transition: transform 300ms ease-in;
+  }
+  .project__card > img {
+    width: 300px;
+    height: 160px;
+    object-fit: contain;
+    border-radius: 20px;
+    margin-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+  }
+}
